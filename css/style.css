@@ -1,0 +1,66 @@
+body{
+    width: 390px;
+    height: 450px;
+    background-color: #333333;
+    border-radius: 2px;
+    color: #FAC164;
+}
+
+a{
+    color: #FAC164;   
+}
+
+video{
+    border: solid 5px #FAC164;
+}
+
+a:hover{
+    color: #D2CC20;
+}
+
+.top{
+    background-image: url("../img/optin_logo.png");
+    background-repeat: no-repeat;
+    width: 278px;
+    height: 99px;
+    margin:auto;
+    margin-top: 30px;
+}
+
+.content{
+    min-height: 280px;
+}
+
+.bottom{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navtrack-user{
+    color: white;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.navtrack-title{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.iconfix{
+    position: relative;
+    top: 2px;    
+}
+
+.btn-optin{
+    background-color: #D2CC20 !important;
+}
+
+.switch_area{
+    text-align: center;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}

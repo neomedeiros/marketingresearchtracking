@@ -1,0 +1,119 @@
+html {
+  display: block;
+}
+
+body {
+  margin: 0;
+  width: 480px;
+  min-height: 48px;
+  font-family: Segoe UI, Tahoma, Arial, Verdana;
+  font-size: 75%;
+  line-height: inherit;
+}
+
+div {
+  display: block;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.footer {
+  color: #999999;
+  font-size: 11px;
+  text-align: center;
+  border-top: solid 1px #cccccc;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.product-details-container {
+  margin-left: 20px;
+  margin-top: 27px;
+  height: 80px;
+}
+
+.product-icon {
+  padding-top: 5px;
+  float: left;
+}
+
+.product-details {
+  float: left;
+  margin-left: 24px;
+}
+
+.product-name {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.product-name sup {
+  color: #000000;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.product-specs {
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+.product-specs table {
+  border-spacing: 0;
+}
+
+.product-specs .spec-name {
+  color: #999999;
+  font-weight: 600;
+}
+
+.product-specs .spec-value {
+  padding-left: 2px;
+}
+
+.product-description {
+  font-size: 13px;
+  margin-left: 20px;
+  margin-bottom: 21px;
+  padding-right: 20px;
+}
+
+#moreDetailsLink {
+  font-weight: bold;
+  font-size: 26px;
+  color: rgb(167, 94, 52);  
+  margin-left: 20px;
+}
+
+.trackingNavigationTitle {
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    font-weight: bold; 
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.trackingStatusLabel {
+  margin-left: 10px;
+}
+
+.trackingStatusLabelOn {
+  color: #d2cc20;
+}
+
+.trackingStatusLabelOff {
+  color: #ccc;
+}

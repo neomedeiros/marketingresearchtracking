@@ -1,0 +1,51 @@
+{
+  "manifest_version": 2,
+  "name": "EarnHoney HD$ meter : BETA",
+  "short_name": "EH HD$ meter",
+  "version": "1.45",
+  "description": "EarnHoney HD$ meter : BETA.  Keep track of your earnings progress as you take surveys, play games, and watch videos.",
+  "icons": { "128": "icon.png" },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "HD$ meter : BETA"
+  },
+  "permissions": [
+    "http://*.earnhoney.com/*",
+    "http://*.matchedcars.com/*",
+    "http://*.tvminutes.com/*",
+    "http://*.meemd.com/*",
+    "http://*.miimd.com/*",
+    "http://*.earnhoney.tv/*",
+    "http://*.tvglee.com/*",
+    "http://*.furryflix.com/*",
+    "http://*.autopairs.com/*",
+    "http://*.mooviemania.com/*"
+  ],
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": false
+  },
+  "minimum_chrome_version": "22.0.0.0",
+  "content_scripts": [
+    {
+      "js": [
+        "addscript.js"
+      ],
+      "matches": [
+        "http://*.earnhoney.com/*",
+        "http://*.matchedcars.com/*",
+        "http://*.tvminutes.com/*",
+        "http://*.miimd.com/*",
+        "http://*.meemd.com/*",
+        "http://*.earnhoney.tv/*",
+        "http://*.tvglee.com/*",
+        "http://*.furryflix.com/*",
+        "http://*.autopairs.com/*",
+        "http://*.mooviemania.com/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "converted_from_user_script": true
+}

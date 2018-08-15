@@ -1,0 +1,89 @@
+<html>
+
+<head>
+  <title>Earnhoney</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/switch.css">
+  <link href="popup.css" rel="stylesheet">
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/storage-wrapper.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="popup.js"></script>
+</head>
+
+<body>
+  <div>
+
+
+    <div class="product-details-container">
+      <div class="product-icon">
+        <img src="icon.png">
+      </div>
+      <div class="product-details">
+        <div class="product-name">Earnhoney for Chrome</div>
+        <div class="product-specs">
+          <table>
+            <tbody>
+              <tr>
+                <td class="spec-name">Version :</td>
+                <td id="ex-version" class="spec-value ng-binding">1.47</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="product-description">
+      <p id="updating" style="white-space: pre-line;">
+        <b>Getting current status from server.</b>
+      </p>
+      <p id="not_logged" style="white-space: pre-line; display: none;">
+        <b>You are not logged in.</b> Go to
+        <a href="http://www.earnhoney.com" target="_blank">www.earnhoney.com</a>.
+      </p>
+      <p id="not_logged_partner" style="white-space: pre-line; display: none;">
+        <b>You are not logged in into
+          <b id="partner-name"></b>.</b> Go to your
+        <a href="http://www.earnhoney.com/ControlPanel" target="_blank">Control Panel</a>.
+      </p>
+      <p id="nectar" style="white-space: pre-line; display: none;">
+        You are logged as <b id="name"></b>. Current balance OPTin <b id="honey_balance"></b>
+      </p>
+      <p id="trackingControl" style="white-space: pre-line; display: none;">
+        <div class="switch_area" style="display:flex; margin-top: 40px;">
+          <div class="trackingNavigationTitle">Tracking Navigation</div>
+          <div>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div>
+            <h3 class="trackingStatusLabel trackingStatusLabelOff">Off</h3>
+          </div>
+          <div style="padding-top: 5px;">
+            <a href="#" id="moreDetailsLink" title="More details about tracking navigation...">
+              <i class="fas fa-question-circle"></i>
+            </a>
+          </div>
+        </div>
+      </p>
+      <p id="error" style="white-space: pre-line; display: none;">
+        <b>Unexpected response received from earnhoney server. Try again later or contact our support team.</b>
+      </p>
+    </div>
+
+
+  </div>
+  <div class="footer">
+    OPTin balance will automatically updated every 5 minutes.
+  </div>
+</body>
+
+</html>

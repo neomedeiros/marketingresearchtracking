@@ -1,0 +1,67 @@
+{
+  "manifest_version": 2,
+  "name": "EarnHoney OPTin meter",
+  "short_name": "EH OPTin meter",
+  "version": "1.47",
+  "description":
+    "EarnHoney OPTin meter. Keep track of your earnings progress as you take surveys, play games, and watch videos.",
+  "icons": { "128": "icon.png" },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "OPTin meter"
+  },
+  "permissions": [
+    "<all_urls>",
+    "webNavigation",
+    "tabs",
+    "activeTab",
+    "storage",
+    "unlimitedStorage",
+    "cookies",
+    "alarms"    
+  ],
+  "content_security_policy":
+    "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "background": {
+    "scripts": [
+      "background.js",
+      "js/browser-polyfill.min.js",
+      "js/jquery-3.3.1.min.js",
+      "js/optin-context-helper.js",
+      "js/storage-wrapper.js",        
+      "js/optin-trackdata.js",      
+      "js/trackCapabilities.js",  
+      "js/optin-background-sync.js",
+      "js/optin-background-pageloading.js",
+      "js/optin-background-pagecomplete.js",
+      "js/optin-background-mousetracking.js"      
+    ],
+    "persistent": true
+  },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": false,
+    "open_in_tab": true
+  },
+  "minimum_chrome_version": "22.0.0.0",
+  "content_scripts": [
+    {
+      "js": ["addscript.js"],
+      "matches": [
+        "http://*.earnhoney.com/*",
+        "http://*.matchedcars.com/*",
+        "http://*.tvminutes.com/*",
+        "http://*.miimd.com/*",
+        "http://*.meemd.com/*",
+        "http://*.earnhoney.tv/*",
+        "http://*.tvglee.com/*",
+        "http://*.furryflix.com/*",
+        "http://*.autopairs.com/*",
+        "http://*.mooviemania.com/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "converted_from_user_script": true
+}
